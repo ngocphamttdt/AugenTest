@@ -1,0 +1,37 @@
+﻿<table class="table" id="dataContent">
+    <thead>
+        <tr>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Company name</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Post</th>
+            <th scope="col">Phone1</th>
+            <th scope="col">Phone2</th>
+            <th scope="col">Email</th>
+            <th scope="col">Web</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.first_name</td>
+                <td>@item.last_name</td>
+                <td>@item.company_name</td>
+                <td>@item.address</td>
+                <td>@item.city</td>
+                <td>@item.state</td>
+                <td>@item.post</td>
+                <td>@item.phone1</td>
+                <td>@item.phone2</td>
+                <td>@item.email</td>
+                <td>@item.web</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
